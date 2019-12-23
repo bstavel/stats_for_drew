@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1571759998893.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4037925681",
+    "id" : "46A3145B",
+    "lastKnownWriteTime" : 1571779763,
+    "last_content_update" : 1571779763,
+    "path" : "~/Projects/stats_class/STAT-215A-Fall-2019/lab3/similarity.cpp",
+    "project_path" : "similarity.cpp",
+    "properties" : {
+        "cursorPosition" : "18,9",
+        "scrollLine" : "11"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "cpp"
+}

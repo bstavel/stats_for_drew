@@ -1,0 +1,14 @@
+adjMat <- function(vec, n){
+  ### takes a group vector and converts to an adjacency matrix ###
+  for(c in 1:n){
+    ## create 0 matrix with dimensions n X n
+    C <- matrix(0, nrow = length(vec), ncol = length(vec))
+    ## get indices of individuals in group c
+    indx  = which(vec == c)
+    ## set all pairs to 1
+    C[indx, indx] <- 1
+    ## return vector
+    return(C)
+  }
+  
+}

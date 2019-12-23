@@ -1,0 +1,3 @@
+"0",""
+"0","# lingData <- load('./data/lingBinary.RData')"
+"0","load('./quickStart.RData')"

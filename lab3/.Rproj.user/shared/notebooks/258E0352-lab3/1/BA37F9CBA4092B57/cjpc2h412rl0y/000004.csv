@@ -1,0 +1,14 @@
+"0","sourceCpp('similarity.cpp')
+"
+"2","similarity.cpp:31:18: warning: variable 'sumN10' is uninitialized when used within its own initialization [-Wuninitialized]
+"
+"2","                                int sumN10 = sumN10 + 1;
+                                    ~~~~~~   ^~~~~~
+similarity.cpp:27:18: warning: variable 'sumN11' is uninitialized when used within its own initialization [-Wuninitialized]
+                                int sumN11 = sumN11 + 1;
+                                    ~~~~~~   ^~~~~~
+"
+"2","2 warnings generated.
+"
+"2","ld: warning: text-based stub file /System/Library/Frameworks//CoreFoundation.framework/CoreFoundation.tbd and library file /System/Library/Frameworks//CoreFoundation.framework/CoreFoundation are out of sync. Falling back to library file for linking.
+"

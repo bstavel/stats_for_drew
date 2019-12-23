@@ -1,0 +1,26 @@
+clusterBenHur <- function(df, kMax, N, sub_size){
+  sim <- matrix(NA, nrow = N, ncol = kMax)
+  for(i in 0:((kMax - 1) * (N) - 1) ) {
+    ktmp <- floor(i/N) + 2
+    ntmp <- (i + 1) - (N * (ktmp - 2) )
+    
+    print(paste0("Beginning Cluster ", ktmp, " on Round ", ntmp) )
+    sub1 <- sample_n(df, sub_size)
+    sub2 <- sample_n(df, sub_size)
+    intersect <- sub1$ID[sub1$ID %in% sub2$ID]
+    
+    ## cluster
+    toClust1 <- sub1[, grepl("^Q", colnames(sub1))]
+    toClust2 <- sub2[, grepl("^Q", colnames(sub2))]
+    cluster1 <- kmeans(toClust1, ktmp)
+    cluster2 <- kmeans(toClust2, ktmp)
+    
+    print("Clustering Finished... Beginning Adjacency Matrix")
+    C1 <- adjMat(cluster1$cluster, ktmp)
+    C2 <- adjMat(cluster2$cluster, ktmp)
+    
+    print("Calculated.... Calculating Jaccard Similarity")
+    sim[ntmp, ktmp] <- similarityRcpp(C1, C2)
+  }
+  return(sim)
+}

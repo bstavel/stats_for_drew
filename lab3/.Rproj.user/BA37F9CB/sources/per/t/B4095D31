@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1571780292247.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "82352082",
+    "id" : "B4095D31",
+    "lastKnownWriteTime" : 1571780347,
+    "last_content_update" : 1571780347952,
+    "path" : "~/Projects/stats_class/STAT-215A-Fall-2019/lab3/R/clusterBenHur.R",
+    "project_path" : "R/clusterBenHur.R",
+    "properties" : {
+        "cursorPosition" : "25,1",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

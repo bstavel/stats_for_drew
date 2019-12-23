@@ -1,0 +1,11 @@
+similarity <- function(C1, C2){
+  ### This function computes the Jaccard coefficient between two clustering solutions, as defined in Ben-Hur et al. [2001] ###
+  
+  ## if both matrices have Cij == 1, then [C1 + C2]ij == 2
+  N11 <- sum(C1 + C2 == 2)
+  ## if either matrices have Cij == 1, then [C1 + C2]ij == 1
+  N10 <- sum(C1 + C2 == 1)
+  similarity <- N11  / ( 2*N10 )
+  
+  return(similarity)
+}

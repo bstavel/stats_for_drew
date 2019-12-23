@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1571780370081.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "117088733",
+    "id" : "956844E0",
+    "lastKnownWriteTime" : 1571780412,
+    "last_content_update" : 1571780412497,
+    "path" : "~/Projects/stats_class/STAT-215A-Fall-2019/lab3/R/similarity.R",
+    "project_path" : "R/similarity.R",
+    "properties" : {
+        "cursorPosition" : "10,1",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 6,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

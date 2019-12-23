@@ -1,0 +1,74 @@
+---
+title: "Lab 3"
+author: "Brooke Staveland"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+header-includes:
+   - \usepackage{float}
+output: 
+  pdf_document:
+    number_sections: true
+---
+
+# Introduction
+```{r}
+
+library(tidyverse)
+library(Rcpp)
+library(ggplot2)
+library(microbenchmark)
+```
+
+# The Data
+
+```{r load-ldata}
+
+# lingData <- load('./data/lingBinary.RData')
+load('./quickStart.RData')
+```
+
+# Similarity Functions
+
+## R
+
+```{r r-sim}
+
+
+
+
+
+```
+
+## Rcpp 
+
+```{r rcpp-sim}
+
+sourceCpp('similarity.cpp')
+
+ptmRcpp <- proc.time()
+  similarityRcpp(C1, C2)
+finishRcpp <- proc.time() - ptmRcpp
+
+ptmR <- proc.time()
+  jaccardSim(C1, C2)
+finishR <-  proc.time() - ptmR
+
+```
+
+
+
+```{r cluster}
+
+## set params ##
+kMax = 10
+N = 10
+m = .1
+sub_size <- m*nrow(lingBinary)
+
+## cluster it! ##
+ptm <- proc.time()
+similarity_of_clusters <- clusterBenHur(lingBinary, kMax, N, sub_size)
+finish <- proc.time() - ptm
+  
+```
+
+

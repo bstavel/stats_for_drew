@@ -1,0 +1,4 @@
+"0","  sim <- sum(N11_mat) / ( sum(N10_mat) + sum(N10_mat) )
+"
+"2","Error: object 'N10_mat' not found
+"

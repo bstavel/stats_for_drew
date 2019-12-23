@@ -1,0 +1,25 @@
+// Based on Hadley Wickam's Rcpp tutorial:
+// http://adv-r.had.co.nz/Rcpp.html
+
+#include <Rcpp.h>
+
+// [[Rcpp::export]]
+	double similarityRcpp(Rcpp::NumericMatrix C1, Rcpp::NumericMatrix C2) {
+  // Calculate the jaccard similarity between the first matrix C1 and
+  // second matrix, C2.
+
+  // Check that C1 and C2 have same dimensions
+  if (C1.cols() != C2.cols()) {
+    Rcpp::Rcout << "Error: C1 and C2 must have same number of columns.\n";
+  }
+	if (C1.nrow() != C2.nrow()) {
+		Rcpp::Rcout << "Error: C1 and C2 must have same number of rows.\n";
+	}
+
+  double sumN11 = sum( ( C1 + C2 ) == 2 );
+	double sumN10 = sum( ( C1 + C2 ) == 1 );
+
+	double similarity = sumN11 / (sumN10 + sumN10 );
+
+  return similarity;
+}

@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1571350548544.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1614251388",
+    "id" : "78CDD2F",
+    "lastKnownWriteTime" : 1570030103,
+    "last_content_update" : 1570030103,
+    "path" : "~/Projects/stats_class/STAT-215A-Fall-2019/lab2/lab2_template/lab2_template.Rmd",
+    "project_path" : null,
+    "properties" : {
+        "cursorPosition" : "59,0",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

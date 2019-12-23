@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1571780353853.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3241853912",
+    "id" : "75846453",
+    "lastKnownWriteTime" : 1571780362,
+    "last_content_update" : 1571780362905,
+    "path" : "~/Projects/stats_class/STAT-215A-Fall-2019/lab3/R/adjMat.R",
+    "project_path" : "R/adjMat.R",
+    "properties" : {
+        "cursorPosition" : "13,1",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
